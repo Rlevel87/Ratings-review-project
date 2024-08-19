@@ -1,0 +1,113 @@
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%); 
+}
+body{
+    background-color: hsl(0, 0%, 4%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'overpass', sans-serif; 
+    font-size: 15px;
+    
+}
+.container{
+    background-color: var(--VeryDarkBlue);
+    max-width: 325px;
+    padding: 2rem;
+    border-radius: 1.5rem;   
+    margin: 0 2rem;
+}
+h1{
+    color: white;
+    font-weight: 700;
+}
+p{
+    color: var(--LightGrey);
+    font-weight: 400;
+    line-height: 25px;
+}
+.star, .rating{
+    background-color: hsl(213 , 19%, 11%);
+    width: 50px;
+    height: 50px;
+    border-radius: 4rem;
+}
+.star{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rating{
+    border: none;
+    margin: 5px;
+    color: white;
+}
+.rating:hover{
+    background-color: hsl(37, 98%, 49%);
+    color: black;
+    cursor: pointer;
+}
+.submit{
+    width: 325px;
+    height: 45px;
+    border-radius: 3rem;
+    margin-top: 1rem;
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: hsl(37, 98%, 49%);
+    border: none;
+}
+.submit:hover{
+    background-color: var(--White);
+    cursor: pointer;
+}
+footer{
+    color: white;
+    margin-top: 5rem;
+}
+.container2ndPage{
+    background-color: var(--VeryDarkBlue);
+    max-width: 335px;
+    padding: 2rem;
+    border-radius: 1.5rem;   
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container2ndPage p{
+    text-align: center;
+    margin: 0;
+}
+#selectedInput{
+    width: 200px;
+    height: 25px;
+    border-radius: 5rem;
+    color: hsl(37, 98%, 49%);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(213 , 19%, 11%);
+}
+@media (max-width: 375px){
+    .container{
+        min-width: 300px;
+        margin: 0 2rem;
+        padding: 1rem;
+    }
+    .submit{
+        width: 300px;
+    }
+    .rating{
+        margin: 3px;
+    }
+}

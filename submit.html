@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon-32x32.png">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="container2ndPage">
+        <div class="thankYou">
+                <img src="images/illustration-thank-you.svg" alt="Thank you image">
+        </div>
+
+        <div>
+             <p id="selectedInput"></p>
+        </div>
+
+        <h1>
+            Thank you!
+        </h1>
+
+        <div class="pre">
+             <p>
+                 We appreciate you taking the time to give a rating. 
+                 If you ever need more support, don’t hesitate to 
+                 get in touch!
+            </p>
+        </div>
+        
+    </div>
+    <footer>
+        Challenge by <a href="https://www.frontendmentor.io/solutions/news-homepage-PqJc_mGyBG"> Frontend Mentor.</a> 
+        Coded by <a href="https://www.frontendmentor.io/profile/Rlevel87">Rlevel87</a>.
+    </footer>
+    <script>
+            window.addEventListener('load', () => {
+            const displayResult = document.getElementById('selectedInput');
+            const selectedRating = localStorage.getItem('selectedRating');
+            if (displayResult && selectedRating) {
+                displayResult.textContent = `You selected ${selectedRating} out of 5`;
+            } else {
+                displayResult.textContent = "You did not make a selection";
+            }
+
+            localStorage.removeItem('selectedRating');
+        });
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
